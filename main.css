@@ -451,7 +451,7 @@ hr{
     }
 }
 
-@media (max-width: 500px){
+@media (max-width: 498px){
     .products .grid{
         grid-template-columns: 1fr;
         grid-template-rows: 100px 200px 300px;
