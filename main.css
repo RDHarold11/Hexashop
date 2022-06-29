@@ -509,7 +509,7 @@ hr{
     }
 }
 
-@media (max-width: 320px){
+@media (max-width: 310px){
     .main .grid{
         grid-template-rows: repeat(5, 1fr);
         grid-template-columns: 1fr 1fr 1fr;
