@@ -244,7 +244,7 @@ hr {
 /* Products */
 
 .products .grid {
-  grid-template-columns: 560px 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   column-gap: 2rem;
   height: 100%;
   row-gap: 2rem;
@@ -353,9 +353,9 @@ hr {
 /* Subs */
 
 .sub .grid {
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   /* grid-template-columns: 625px 1fr 1fr; */
-  column-gap: 1.5rem;
+  column-gap: 3rem;
 }
 .right1__sub,
 .right2__sub {
@@ -385,23 +385,23 @@ hr {
 }
 
 /* Footer */
-.footer {
+footer {
   height: 100%;
   padding: 50px 0;
   background-color: #333;
-  height: 430px;
   width: 100%;
   color: var(--fondo);
 }
-.footer .grid {
-  display: grid;
-  grid-template-columns: 1fr;
+footer .grid {
+  max-width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 20px;
 }
-.footer li {
+footer li {
   list-style: none;
   margin: 1rem 0;
 }
-.footer span {
+footer span {
   border: 1px solid #fff;
   width: 100%;
   height: 1px;
@@ -431,12 +431,6 @@ hr {
   }
   .products {
     height: 1200px;
-  }
-  .products .grid {
-    grid-template-columns: 400px 1fr;
-  }
-  .sub .grid {
-    grid-template-columns: 320px 1fr 1fr;
   }
   .name,
   .email {
